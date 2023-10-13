@@ -15,6 +15,8 @@ piname = sys.argv[1]
 stop_display = threading.Event()
 last_mtime = None
 
+print (f'googledrive:/HATRA24SS/raspi/{piname}/', f'to /home/pi/Desktop/{piname}/')
+
 def get_newest_file(path):
     global last_mtime
     files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
