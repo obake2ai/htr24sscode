@@ -15,7 +15,7 @@ piname = sys.argv[1]
 stop_display = threading.Event()
 last_mtime = None
 
-print (f'googledrive:/HATRA24SS/raspi/{piname}/', f'to /home/pi/Desktop/{piname}/')
+#print (f'googledrive:/HATRA24SS/raspi/{piname}/', f'to /home/pi/Desktop/{piname}/')
 
 def get_newest_file(path):
     global last_mtime
@@ -70,7 +70,7 @@ def main():
         bg_image_path_gif = f'/home/pi/Desktop/{piname}/hatra24ss_bg.gif'
         bg_image_path_png = f'/home/pi/Desktop/{piname}/hatra24ss_bg.png'
 
-        print(bg_image_path_gif, bg_image_path_png)
+        #print(bg_image_path_gif, bg_image_path_png)
 
         # gifが存在するかどうかをチェックし、存在しない場合はpngを使用
         if os.path.isfile(bg_image_path_gif):
