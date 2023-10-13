@@ -70,6 +70,8 @@ def main():
         bg_image_path_gif = '/home/pi/Desktop/{piname}/hatra24ss_bg.gif'
         bg_image_path_png = '/home/pi/Desktop/{piname}/hatra24ss_bg.png'
 
+        print(bg_image_path_gif, bg_image_path_png)
+
         # gifが存在するかどうかをチェックし、存在しない場合はpngを使用
         if os.path.isfile(bg_image_path_gif):
             display_image(bg_image_path_gif)
