@@ -65,8 +65,8 @@ def main():
             display_thread.join()
 
         # フォールバック画像のパスを設定
-        bg_image_path_gif = '/path/to/hatra24ss_bg.gif'
-        bg_image_path_png = '/path/to/hatra24ss_bg.png'
+        bg_image_path_gif = '/home/pi/Desktop/{piname}/hatra24ss_bg.gif'
+        bg_image_path_png = '/home/pi/Desktop/{piname}/hatra24ss_bg.png'
 
         # gifが存在するかどうかをチェックし、存在しない場合はpngを使用
         if os.path.isfile(bg_image_path_gif):
